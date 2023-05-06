@@ -31,3 +31,29 @@
 
 13. now we can install `requirements.txt` using `pip` and all our packages will be installed
     `pip install -r requirements.txt`
+
+## Project Structure, Logging And Exception Handling
+
+1. add `components` folder in src and add `__init__.py` `components` will contain all our modules
+2. create `data_ingestions.py` & `data_transformation` & `model_trainer.py` in `components` folder
+   a brief summary of what these files will do is below:
+
+   `Data ingestion` is the process of moving data from a source into a landing area or an object store where it can
+   be used for ad hoc queries and analytics
+
+   `Data transformation` involves creating new features from the existing features in the data, or reducing
+   the dimensionality of the data. This can help to improve the performance of the machine learning algorithm.
+
+   `A machine learning model` is a mathematical representation of real-world data. The model is trained with large
+   datasets, and algorithms assist in learning from the available data. The ML models recognize data patterns, take
+   input queries, and make predictions based on previous data.
+
+3. add a `pipeline` folder in components and add `train_pipeline.py` & `predict_pipeline.py` & `__init__.py` files into it
+
+   `A data pipeline` is a data engineering pipeline that typically `ingests`, `cleans`, and `processes` data to make
+   it compatible or optimized for `machine learning (ML)` or other analytical and visualization processes.
+
+4. add a further 3 files into the src folder: `exceptions.py` `logger.py` & `utils.py`
+
+5. add code for our `exceptions.py`
+6. add code for `logger.py`
